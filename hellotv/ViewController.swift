@@ -15,6 +15,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func btnTouch(_ sender: UIButton) {
+       lblHello.text = "btnTouch triggered!";
+    }
+    
+    @IBAction func btnClicked(_ sender: UIButton) {
+        lblHello.text = "Well hello there!";
+    }
+    
+    @IBOutlet weak var lblHello: UILabel!
 }
 
